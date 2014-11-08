@@ -5,6 +5,8 @@
   <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
 </head>
 <body>
   <header>
@@ -14,8 +16,12 @@
     <div id="veil">
       <div id="welcome">
         <p>I am a...</p>
-        <button>Therapist</button>
-        <button>Patient</button>
+        <button id="therapist">Therapist</button>
+        <button id="patient">Patient</button>
+          <div id="dialog" title="Find a Therapist">Enter your zipcode:<br>
+          <input id="zip">
+          <input type="submit" value="Submit">
+          </div>
       </div>
     </div>
   </div>
@@ -26,5 +32,13 @@
       <li><a href="#">Contact</a></li>
     </ul>
   </footer>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script type="text/javascript">
+    $( "#dialog" ).dialog({ autoOpen: false });
+    $( "#patient" ).click(function() {
+      $( "#dialog" ).dialog( "open" );
+    });
+  </script>
 </body>
 </html>
