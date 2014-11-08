@@ -41,23 +41,32 @@ p, span, li {
   display: inline;
 }
 
+#summary {
+  display: block;
+  float: left;
+}
+
 #addrblock {
   display: inline-block;
   float: left;
 }
 
-#contactbutton {
+#contactbutton, #updatebutton {
   display: inline-block;
   float: left;
   margin: 20px 35px;
 }
 
-#contact {
+#contact, #update {
   border-radius: 8px;
   border: transparent;
   padding: 15px;
-  background: #FFD966;
+  background: #81C5F9;
   font: 18px 'Roboto Condensed';
+}
+
+#contact {
+  background: #FFD966;
 }
 
 .clearfix {
@@ -79,4 +88,48 @@ p, span, li {
 
 #financetxt {
   padding: 1% 2%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#logout {
+  float: right;
+  padding: 1%;
+}
+
+#logout > button {
+  border-radius: 5px;
+  background-color: #C3907D;
+  border: transparent;
+  padding: 8px;
+  font-size: 18px;
+}
+
+#schedule {
+  width: 100%;
+  text-align: center;
+}
+
+#schednow {
+  background: #00DC4F;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 5px;
+  border-radius: 8px;
+  width: 70%;
+}
+
+@media screen and (min-width: 800px) {
+  #contactbutton, #addrblock {
+    display: inline-block;
+    width: 20%;
+    padding: 20px;
+  }
+
+  #summary {
+    display: inline-block;
+  }
 }

@@ -63,7 +63,7 @@ footer {
   height: 100px;
 }
 
-li {
+.nav {
   display: inline-block;
   list-style-type: none;
   margin-right: 15px;
@@ -81,6 +81,14 @@ a {
 a:hover {
   color: red;
   text-decoration: underline;
+}
+
+.ui-widget input[type='submit'] {
+  background-color: RGBA(203, 132, 46, .9);
+  border-radius: 8px;
+  padding: 8px 12px;
+  border: transparent;
+  font-size: 1em;
 }
 
 /*===========================================
