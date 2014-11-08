@@ -131,6 +131,27 @@ a {
   color: white;
 }
 
+/*===========================================
+CSS Nav Bar
+===========================================*/
+.nav_link {
+  display: inline-block;
+  margin: 5px 5px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 5px 5px;
+}
+
+#name {
+  display: block;
+  width: 100%;
+  margin-left: 5px;
+}
+
+.nav_link > a:hover {
+  color: red;
+}
+
 @media screen and (min-width: 800px) {
   #contactbutton, #addrblock, #updatebutton {
     display: inline-block;

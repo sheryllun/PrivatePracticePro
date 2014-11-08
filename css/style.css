@@ -91,6 +91,7 @@ a:hover {
   font-size: 1em;
 }
 
+
 /*===========================================
 CSS for Therapist Form
 ===========================================*/
@@ -106,6 +107,28 @@ CSS for Therapist Form
   color: white;
   padding: 0 10px;
 }
+
+/*===========================================
+CSS Nav Bar
+===========================================*/
+.nav_link {
+  display: inline-block;
+  margin: 5px 0px 5px 15px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 5px 5px;
+}
+
+#name {
+  display: block;
+  width: 100%;
+  margin-left: 5px;
+}
+
+.nav_link > a:hover {
+  color: red;
+}
+
 
 /*===========================================
 CSS for Search Results Page
