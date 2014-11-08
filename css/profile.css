@@ -23,7 +23,7 @@ h2 {
   margin-bottom: 0;
 }
 
-p, span {
+p, span, li {
   margin: 5px 0;
   font-weight: 300;
 }
@@ -37,7 +37,7 @@ p, span {
   color: red;
 }
 
-#first_name, #last_name, #degree {
+.first_name, .last_name, #degree {
   display: inline;
 }
 
@@ -64,7 +64,7 @@ p, span {
   clear: both;
 }
 
-#heading {
+.heading {
   background-color: #FF943A;
   color: white;
   font-weight: 400;
@@ -72,5 +72,11 @@ p, span {
 }
 
 #qualtxt {
+  width: 100%;
+  padding: 1% 2%;
+  margin-bottom: 25px;
+}
+
+#financetxt {
   padding: 1% 2%;
 }
