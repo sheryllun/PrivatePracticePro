@@ -2,3 +2,10 @@
     $( "#contact" ).click(function() {
       $( "#contact-text" ).dialog( "open" );
     });
+
+
+
+$( "#schedtext" ).dialog({ autoOpen: false, width: 350 });
+    $( "#schednow" ).click(function() {
+    $( "#schedtext" ).dialog( "open" );
+    });

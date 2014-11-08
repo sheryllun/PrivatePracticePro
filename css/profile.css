@@ -1,7 +1,7 @@
 body {
   font: 20px 'Roboto Condensed';
 }
-
+ 
 #contactinfo {
   width: 100%;
   margin: 0 auto;
@@ -122,11 +122,21 @@ a {
   width: 70%;
 }
 
+.ui-widget input[type='submit'] {
+  background-color: RGBA(203, 132, 46, .9);
+  border-radius: 8px;
+  padding: 8px 12px;
+  border: transparent;
+  font-size: .8em;
+  color: white;
+}
+
 @media screen and (min-width: 800px) {
-  #contactbutton, #addrblock {
+  #contactbutton, #addrblock, #updatebutton {
     display: inline-block;
     width: 20%;
     padding: 20px;
+    margin-left: 60px;
   }
 
   #summary {
