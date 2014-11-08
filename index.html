@@ -17,6 +17,13 @@
       <div id="welcome">
         <p>I am a...</p>
         <button id="therapist">Therapist</button>
+          <div id="login" title="Log in to your account">
+            Please log in to your account:<br>
+            <input type="text" id="username">
+            <input type="password" id="pass">
+            <input type="submit" value="Submit"><br>
+            Not a member yet? <a href="therapist_form.html">Sign up now</a>.
+          </div>
         <button id="patient">Patient</button>
           <div id="dialog" title="Find a Therapist">Enter your zipcode:<br>
           <input id="zip">
@@ -34,11 +41,6 @@
   </footer>
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-  <script type="text/javascript">
-    $( "#dialog" ).dialog({ autoOpen: false });
-    $( "#patient" ).click(function() {
-      $( "#dialog" ).dialog( "open" );
-    });
-  </script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
