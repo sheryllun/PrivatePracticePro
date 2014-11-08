@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Therapist Profile Form</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Therapist Profile Form</h1>
-  <p>Fill out the form below to register with us.</p>
-  <form action="">
-    <h3>Contact Information</h3>
-    First Name <input type="text" id="first_name" required>
-    Last Name <input type="text" id="last_name" required>
-    Address 1 <input type="text" id="address_one" required>
-    Address 2 <input type="text" id="address_two">
-    City <input type="text" id="city" required>
-    State <select required>
-      <option value="DC">DC</option>
-      <option value="MD">MD</option>
-      <option value="VA">VA</option>
-      </select>
-    Zip Code <input type="text" id="zip" required>
-    Phone Number <input type="text" id="phone" required>
-    Email <input type="text" id="email" required>
-
-    <h3>About You</h3>
-    Upload a profile photo <input type="file" id="pic" accept="image/*">
-  <input type="submit">
-    Degree <input type="text" id="degree" required>
-    University <input type="text" id="university" required>
-    Therapeutic Style <input type="text" id="tstyle" required>
-    Years of Practice <input type="text" id="years">
-    Accepting new patients?<br> Yes<input class="radio" type="radio" name="new" value="yes" required>
-    No <input class="radio" type="radio" name="new" value="no" required>
-    <input type="submit" value="Submit">
-  </form>
+  <div id="wrapper">
+    <h1>Therapist Profile Form</h1>
+    <p>Fill out the form below to register with us.</p>
+    <form action="">
+      <h3>Contact Information</h3>
+      First Name <input type="text" id="first_name" required>
+      Last Name <input type="text" id="last_name" required>
+      Address 1 <input type="text" id="address_one" required>
+      Address 2 <input type="text" id="address_two">
+      City <input type="text" id="city" required>
+      State <select required>
+        <option value="DC">DC</option>
+        <option value="MD">MD</option>
+        <option value="VA">VA</option>
+        </select>
+      Zip Code <input type="text" id="zip" required>
+      Phone Number <input type="text" id="phone" required>
+      Email <input type="text" id="email" required>
+  
+      <h3>About You</h3>
+      Upload a profile photo <input type="file" id="pic" accept=" image/*">
+    <input type="submit">
+      Degree <input type="text" id="degree" required>
+      University <input type="text" id="university" required>
+      Therapeutic Style <input type="text" id="tstyle" required>
+      Years of Practice <input type="text" id="years">
+      Accepting new patients?<br> Yes <input class="radio" type="radio"  name="new" value="yes" required>
+      No <input class="radio" type="radio" name="new" value="no"  required>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
 </body>
 </html>
